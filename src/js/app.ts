@@ -62,7 +62,7 @@ function newGame() {
 function startGame() {
   if (gamePlaying) {
     var diceVal: number = roll(); //storing dice value
-    console.log(diceVal);
+    console.log("Current Dice : "+diceVal);
     changeDice(diceVal); //display dice with their respective rolled dice image
 
     // console.log(p_diceVal);
@@ -78,7 +78,7 @@ function startGame() {
       nextPlayer();
     }
     p_diceVal = diceVal;
-    console.log(diceVal);
+    console.log("Previous Dice : "+p_diceVal);
   }
 }
 function nextPlayer() {
